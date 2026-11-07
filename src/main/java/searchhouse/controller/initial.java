@@ -1,4 +1,4 @@
-package controller;
+package searchhouse.controller;
 
 
 import org.springframework.stereotype.Controller;
