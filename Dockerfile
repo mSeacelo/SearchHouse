@@ -1,6 +1,6 @@
 FROM maven:3.8.8-eclipse-temurin-21 AS build
 
-COPY src /app/src
+COPY backend/src /app/src
 
 COPY pom.xml /app
 
