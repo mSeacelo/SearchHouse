@@ -2,7 +2,7 @@ FROM maven:3.8.8-eclipse-temurin-21 AS build
 
 COPY backend/src /app/src
 
-COPY pom.xml /app
+COPY backend/pom.xml /app
 
 
 WORKDIR /app
