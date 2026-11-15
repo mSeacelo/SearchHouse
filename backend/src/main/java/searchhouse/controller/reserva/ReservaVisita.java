@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 @Table(name = "reservas_visita")
 public class ReservaVisita {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,6 +26,11 @@ public class ReservaVisita {
 
     protected ReservaVisita() {}
 
+    public ReservaVisita(String imovelTitulo, LocalDateTime dataVisita) {
+        this.imovelTitulo = imovelTitulo;
+        this.dataVisita = dataVisita;
+        this.disponivel = true;
+    }
     public Long getId() { return id; }
     public Long getEstudanteId() { return estudanteId; }
     public String getImovelTitulo() { return imovelTitulo; }
@@ -43,3 +49,4 @@ public class ReservaVisita {
         this.disponivel = true;
     }
 }
+
