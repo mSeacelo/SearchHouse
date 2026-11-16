@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS reservas_visita (
 TRUNCATE TABLE reservas_visita RESTART IDENTITY CASCADE;
 
 
-INSERT INTO reservas_visita (estudante_id, imovel_titulo, data_visita, disponivel) VALUESgit
+INSERT INTO reservas_visita (estudante_id, imovel_titulo, data_visita, disponivel) VALUES
     (NULL, 'Republica Kalango', '2026-11-20 14:00:00', TRUE),
     (2, 'Republica Kalango', '2026-11-20 16:00:00', FALSE),
     (NULL, 'Republica Kalango', '2026-11-21 10:00:00', TRUE),
