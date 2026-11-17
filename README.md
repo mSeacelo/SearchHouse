@@ -41,7 +41,7 @@ cd SearchHouse
 cp .env.example .env        # Windows PowerShell: Copy-Item .env.example .env
 docker compose up --build
 
-### Em linux, antes de buildar a imagem com o comando nano ~/.docker/config.json
+### Em linux, antes de buildar a imagem com o comando docker build -f backend/Dockerfile -t searchhouse . && docker compose up --build
 rode nano ~/.docker/config.json, edite para que fique apenas
  {
   "auths": {}
