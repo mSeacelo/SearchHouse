@@ -30,6 +30,8 @@ services:
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD:-postgres}
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      # RN05: prazo da reserva de vaga, em horas (definido pelo cliente)
+      SEARCHHOUSE_RESERVA_PRAZO_HORAS: ${RESERVA_PRAZO_HORAS:-48}
     depends_on:
       db:
         condition: service_healthy
